@@ -123,12 +123,23 @@ code {
   }
 }
 
-.active{
+.inactive{
   width: 100%;
   padding: 24px 0 24px 0;
   font-size: 20px;
   background-color:rgb(217, 209, 209) ;
   color: gray;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.active{
+  width: 100%;
+  padding: 24px 0 24px 0;
+  font-size: 20px;
+  background-color:blue ;
+  color: white;
+  cursor: pointer;
   border: none;
   border-radius: 6px;
   margin-top: 20px;

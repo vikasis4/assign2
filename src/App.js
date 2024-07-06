@@ -57,9 +57,15 @@ function App() {
         }
       </div>
 
-      <button class="active" onClick={runAction}>Continue</button>
-      <h3>{msg}</h3>
-      <h4>
+      {
+        phone?.length == 10 ?
+          <button class="active" onClick={runAction}>Continue</button>
+          :
+          <button class="inactive">Continue</button>
+      }
+
+      <h3 style={{color:'red'}}>{msg}</h3>
+      <h4 >
         Entertainment is a subscription service that will automatically renew for 1 USD/ 7 Day(s). You can unsubscribe from the service at anytime, by sending STOP to **** for (operator) . To make use of this service, you must be 18 or more unless you have received permission from your parents or the person who is authorized to pay your bill.
       </h4>
       <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}>
